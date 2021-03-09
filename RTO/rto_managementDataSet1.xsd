@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="rto_managementDataSet1" targetNamespace="http://tempuri.org/rto_managementDataSet1.xsd" xmlns:mstns="http://tempuri.org/rto_managementDataSet1.xsd" xmlns="http://tempuri.org/rto_managementDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="rto_managementConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="rto_managementConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.RTO.My.MySettings.GlobalReference.Default.rto_managementConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vehicleTableAdapter" GeneratorDataComponentClassName="vehicleTableAdapter" Name="vehicle" UserDataComponentName="vehicleTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="rto_managementConnectionString (MySettings)" DbObjectName="rto_management.vehicle" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `RTO`, `Vehicle_Slno`, `NameofVehicle`, `Nameofbuyer`, `TOV`, `NOS`, `AOB`, `POB`, `Status` FROM `vehicle`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="RTO" DataSetColumn="RTO" />
+              <Mapping SourceColumn="Vehicle_Slno" DataSetColumn="Vehicle_Slno" />
+              <Mapping SourceColumn="NameofVehicle" DataSetColumn="NameofVehicle" />
+              <Mapping SourceColumn="Nameofbuyer" DataSetColumn="Nameofbuyer" />
+              <Mapping SourceColumn="TOV" DataSetColumn="TOV" />
+              <Mapping SourceColumn="NOS" DataSetColumn="NOS" />
+              <Mapping SourceColumn="AOB" DataSetColumn="AOB" />
+              <Mapping SourceColumn="POB" DataSetColumn="POB" />
+              <Mapping SourceColumn="Status" DataSetColumn="Status" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="rto_managementDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="rto_managementDataSet1" msprop:Generator_UserDSName="rto_managementDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vehicle" msprop:Generator_TableClassName="vehicleDataTable" msprop:Generator_TableVarName="tablevehicle" msprop:Generator_TablePropName="vehicle" msprop:Generator_RowDeletingName="vehicleRowDeleting" msprop:Generator_RowChangingName="vehicleRowChanging" msprop:Generator_RowEvHandlerName="vehicleRowChangeEventHandler" msprop:Generator_RowDeletedName="vehicleRowDeleted" msprop:Generator_UserTableName="vehicle" msprop:Generator_RowChangedName="vehicleRowChanged" msprop:Generator_RowEvArgName="vehicleRowChangeEvent" msprop:Generator_RowClassName="vehicleRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RTO" msprop:Generator_ColumnVarNameInTable="columnRTO" msprop:Generator_ColumnPropNameInRow="RTO" msprop:Generator_ColumnPropNameInTable="RTOColumn" msprop:Generator_UserColumnName="RTO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Vehicle_Slno" msprop:Generator_ColumnVarNameInTable="columnVehicle_Slno" msprop:Generator_ColumnPropNameInRow="Vehicle_Slno" msprop:Generator_ColumnPropNameInTable="Vehicle_SlnoColumn" msprop:Generator_UserColumnName="Vehicle_Slno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NameofVehicle" msprop:Generator_ColumnVarNameInTable="columnNameofVehicle" msprop:Generator_ColumnPropNameInRow="NameofVehicle" msprop:Generator_ColumnPropNameInTable="NameofVehicleColumn" msprop:Generator_UserColumnName="NameofVehicle" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nameofbuyer" msprop:Generator_ColumnVarNameInTable="columnNameofbuyer" msprop:Generator_ColumnPropNameInRow="Nameofbuyer" msprop:Generator_ColumnPropNameInTable="NameofbuyerColumn" msprop:Generator_UserColumnName="Nameofbuyer" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TOV" msprop:Generator_ColumnVarNameInTable="columnTOV" msprop:Generator_ColumnPropNameInRow="TOV" msprop:Generator_ColumnPropNameInTable="TOVColumn" msprop:Generator_UserColumnName="TOV" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NOS" msprop:Generator_ColumnVarNameInTable="columnNOS" msprop:Generator_ColumnPropNameInRow="NOS" msprop:Generator_ColumnPropNameInTable="NOSColumn" msprop:Generator_UserColumnName="NOS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AOB" msprop:Generator_ColumnVarNameInTable="columnAOB" msprop:Generator_ColumnPropNameInRow="AOB" msprop:Generator_ColumnPropNameInTable="AOBColumn" msprop:Generator_UserColumnName="AOB" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POB" msprop:Generator_ColumnVarNameInTable="columnPOB" msprop:Generator_ColumnPropNameInRow="POB" msprop:Generator_ColumnPropNameInTable="POBColumn" msprop:Generator_UserColumnName="POB" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

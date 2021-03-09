@@ -1,0 +1,556 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{92F4D3F5-7F7F-4549-B840-83C7DD645D50}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>RTO.My.MyApplication</StartupObject>
+    <RootNamespace>RTO</RootNamespace>
+    <AssemblyName>RTO</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>RTO.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>RTO.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.22.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.EntityFramework, Version=8.0.22.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Web, Version=8.0.22.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Applicant.Designer.vb">
+      <DependentUpon>Applicant.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Applicant.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application View.Designer.vb">
+      <DependentUpon>Application View.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Application View.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Approved.Designer.vb">
+      <DependentUpon>Approved.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Approved.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="billgenerated.Designer.vb">
+      <DependentUpon>billgenerated.vb</DependentUpon>
+    </Compile>
+    <Compile Include="billgenerated.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dealer.Designer.vb">
+      <DependentUpon>Dealer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dealer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DealarRegistration.Designer.vb">
+      <DependentUpon>DealarRegistration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DealarRegistration.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dealerlogin.Designer.vb">
+      <DependentUpon>Dealerlogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dealerlogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DLLANDLLAPP.Designer.vb">
+      <DependentUpon>DLLANDLLAPP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DLLANDLLAPP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DLTest.Designer.vb">
+      <DependentUpon>DLTest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DLTest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="generatedvehicleno.Designer.vb">
+      <DependentUpon>generatedvehicleno.vb</DependentUpon>
+    </Compile>
+    <Compile Include="generatedvehicleno.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerateVehicleNo.Designer.vb">
+      <DependentUpon>GenerateVehicleNo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GenerateVehicleNo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LLApproved.Designer.vb">
+      <DependentUpon>LLApproved.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LLApproved.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LLconfirmation.Designer.vb">
+      <DependentUpon>LLconfirmation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LLconfirmation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LLRegistration.Designer.vb">
+      <DependentUpon>LLRegistration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LLRegistration.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Application1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="payment.Designer.vb">
+      <DependentUpon>payment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="payment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration2.Designer.vb">
+      <DependentUpon>Registration2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Registration2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RTO_Login.Designer.vb">
+      <DependentUpon>RTO_Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RTO_Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rto_managementDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rto_managementDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="rto_managementDataSet.vb">
+      <DependentUpon>rto_managementDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="rto_managementDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rto_managementDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="rto_managementDataSet21.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rto_managementDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RTO_Officer.Designer.vb">
+      <DependentUpon>RTO_Officer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RTO_Officer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RulesRegulation.Designer.vb">
+      <DependentUpon>RulesRegulation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RulesRegulation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Start.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Start.Designer.vb">
+      <DependentUpon>Start.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="starttest.Designer.vb">
+      <DependentUpon>starttest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="starttest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TermsCondition.Designer.vb">
+      <DependentUpon>TermsCondition.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TermsCondition.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TRACK_APPLICATION.Designer.VB">
+      <DependentUpon>TRACK_APPLICATION.VB</DependentUpon>
+    </Compile>
+    <Compile Include="TRACK_APPLICATION.VB">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleRegistration.Designer.vb">
+      <DependentUpon>VehicleRegistration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleRegistration.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Welcome.Designer.vb">
+      <DependentUpon>Welcome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Welcome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Welcomedealer.Designer.vb">
+      <DependentUpon>Welcomedealer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Welcomedealer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Welcome_officer.Designer.vb">
+      <DependentUpon>Welcome_officer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Welcome_officer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Applicant.resx">
+      <DependentUpon>Applicant.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application View.resx">
+      <DependentUpon>Application View.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Approved.resx">
+      <DependentUpon>Approved.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="billgenerated.resx">
+      <DependentUpon>billgenerated.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dealer.resx">
+      <DependentUpon>Dealer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DealarRegistration.resx">
+      <DependentUpon>DealarRegistration.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dealerlogin.resx">
+      <DependentUpon>Dealerlogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DLLANDLLAPP.resx">
+      <DependentUpon>DLLANDLLAPP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DLTest.resx">
+      <DependentUpon>DLTest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="generatedvehicleno.resx">
+      <DependentUpon>generatedvehicleno.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerateVehicleNo.resx">
+      <DependentUpon>GenerateVehicleNo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LLApproved.resx">
+      <DependentUpon>LLApproved.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LLconfirmation.resx">
+      <DependentUpon>LLconfirmation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LLRegistration.resx">
+      <DependentUpon>LLRegistration.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="payment.resx">
+      <DependentUpon>payment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registration2.resx">
+      <DependentUpon>Registration2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RTO_Login.resx">
+      <DependentUpon>RTO_Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RTO_Officer.resx">
+      <DependentUpon>RTO_Officer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RulesRegulation.resx">
+      <DependentUpon>RulesRegulation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Start.resx">
+      <DependentUpon>Start.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="starttest.resx">
+      <DependentUpon>starttest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TermsCondition.resx">
+      <DependentUpon>TermsCondition.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TRACK_APPLICATION.resx">
+      <DependentUpon>TRACK_APPLICATION.VB</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleRegistration.resx">
+      <DependentUpon>VehicleRegistration.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome.resx">
+      <DependentUpon>Welcome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcomedealer.resx">
+      <DependentUpon>Welcomedealer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome_officer.resx">
+      <DependentUpon>Welcome_officer.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="rto_managementDataSet.xsc">
+      <DependentUpon>rto_managementDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="rto_managementDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>rto_managementDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="rto_managementDataSet.xss">
+      <DependentUpon>rto_managementDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="rto_managementDataSet1.xsc">
+      <DependentUpon>rto_managementDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="rto_managementDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>rto_managementDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="rto_managementDataSet1.xss">
+      <DependentUpon>rto_managementDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="rto_managementDataSet21.xsc">
+      <DependentUpon>rto_managementDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="rto_managementDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>rto_managementDataSet21.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="rto_managementDataSet21.xss">
+      <DependentUpon>rto_managementDataSet21.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black_minimalistic_dark_patterns_textures_1366x768.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RTO_National_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1363933683_494576713_1-pictures-of-rto-consultants-in-bangalore-9060059444-9060084008-karnataka-rto-agents-in-bangalore-ma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_line_surface_texture_15641_1366x768.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chennai road map.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NEw Delhi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BANGALORE1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1423854.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-waves-1366x768-abstract-background-93-258598435.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-pattern-background-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beautiful-green-fresh-desktop-wallpaper-1366x768.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\518079-background-hd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue_Plastic_wallpaper_1366x768.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green-02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-pattern-background-11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Three-Differant-Indian-Chief-Bike-On-Road-Full-HD-Wallpapers-1024x576.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\driving-license-640x360.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ws_Black_Denim_Background_1366x768.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cartoon_directional_sign_wood_clip_art_22873215.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\codigo-cvv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\india-5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\india-51.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q112.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q19.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q17.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vidhana_Soudha_2012.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3869354719_6131325967_o.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vidhana_Soudha_20121.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\518079-background-hd1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bajaj-Pulsar-RS-200-projector-headlamps-1024x526.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pulsar-200-SS-rear-rendering.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3869354719_6131325967_o1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ducati_999_2005_01_b1920.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drivers license application copy %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Seal_of_Karnataka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lOGP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dealer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dealer1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background-wallpapers-26.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
